@@ -19,42 +19,42 @@ import java.sql.SQLException;
 @Configuration
 public class DruidConfiguration {
     private final static Logger logger = LoggerFactory.getLogger(DruidConfiguration.class);
-    @Value("${datasource.default.url}")
-    private String dbUrl;
-    @Value("${datasource.default.username}")
-    private String username;
-    @Value("${datasource.default.password}")
-    private String password;
-    @Value("${datasource.default.driver}")
-    private String driverClassName;
+//    @Value("${datasource.default.url}")
+//    private String dbUrl;
+//    @Value("${datasource.default.username}")
+//    private String username;
+//    @Value("${datasource.default.password}")
+//    private String password;
+//    @Value("${datasource.default.driver}")
+//    private String driverClassName;
 
 
-    /**
-     * Method description
-     *
-     *
-     * @return
-     */
-    @Bean(destroyMethod = "close", initMethod = "init", name = "defaultDs")
-    @Primary
-    public DataSource druidDataSource() {
-        DataSource datasource = new DataSource();
-
-        datasource.setUrl(dbUrl);
-        datasource.setUsername(username);
-        datasource.setPassword(password);
-        datasource.setd
-
-        try {
-            datasource.setFilters(filters);
-        } catch (SQLException e) {
-            logger.error(e.getMessage());
-        }
-
-        logger.info("==============Database:" + dbUrl + "===============");
-
-        return datasource;
-    }
+//    /**
+//     * Method description
+//     *
+//     *
+//     * @return
+//     */
+//    @Bean(destroyMethod = "close", initMethod = "init", name = "defaultDs")
+//    @Primary
+//    public DataSource druidDataSource() {
+//        DataSource datasource = new DataSource();
+//
+//        datasource.setUrl(dbUrl);
+//        datasource.setUsername(username);
+//        datasource.setPassword(password);
+//        datasource.setd
+//
+//        try {
+//            datasource.setFilters(filters);
+//        } catch (SQLException e) {
+//            logger.error(e.getMessage());
+//        }
+//
+//        logger.info("==============Database:" + dbUrl + "===============");
+//
+//        return datasource;
+//    }
 
 
 }

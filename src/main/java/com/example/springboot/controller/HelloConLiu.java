@@ -14,7 +14,7 @@ public class HelloConLiu {
     @ResponseBody
     @RequestMapping("/helloliu")
     public String helloliu(){
-        return "liu,hello springboot2";
+        return "liu,hello springboot3";
     }
 
 }
